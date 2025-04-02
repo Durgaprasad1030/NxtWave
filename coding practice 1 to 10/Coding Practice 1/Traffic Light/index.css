@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.mainDiv {
+    padding-top: 10px;
+    text-align: center;
+    height: 100vh;
+    background-color: #86d2f2;
+    font-family: "Roboto";
+}
+
+.signal {
+    padding-top: 36px;
+}
+
+.signalBoard {
+    border-radius: 32px;
+    height: 230px;
+    width: 86px;
+    background-color: #1f1d41;
+    padding-left: 26px;
+}
+
+Button {
+    margin-bottom: 32px;
+    background-color: #1f1d41;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 6px;
+    width: 60px;
+}
+
+.red {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #4b5069;
+    margin-bottom: 32px;
+}
+
+.yellow {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #4b5069;
+    margin-bottom: 32px;
+}
+
+.green {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #4b5069;
+    margin-bottom: 32px;
+}
