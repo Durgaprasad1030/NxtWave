@@ -1,0 +1,30 @@
+let requestBody = document.getElementById('requestBody');
+let sendPostRequestBtn = document.getElementById('sendPostRequestBtn');
+let requestStatus = document.getElementById('requestStatus');
+let httpResponse = document.getElementById('httpResponse');
+let loading = document.getElementById('loading');
+
+function postHTTP() {
+    let data = requestBody.value;
+    let url = "https://gorest.co.in/public-api/users";
+    let options = {
+        method: "POST",
+        headers: {
+            "content-type": "application/json",
+            Accept: "application/json",
+            Authorization: "Bearer 7a01c49e55303d2ced835ef4ca3e2ee623d131b959687810f1b9486a7eca6491"
+        },
+        body: data
+    };
+    fetch(url, options)
+        .then(function(response) {
+            loading.classList.toggle("d-none");
+            return response.json();
+        })
+        .then(function(jsonData) {
+            loading.classList.toggle("d-none");
+            requestStatus.textContent = jsonData.code;
+            httpResponse.textContent = JSON.stringify(jsonData);
+        });
+}
+sendPostRequestBtn.addEventListener('click', postHTTP);
